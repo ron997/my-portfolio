@@ -1,0 +1,94 @@
+/* Custom styles for the portfolio */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://wallpapercave.com/wp/wp6690890.jpg'); /* Replace with your background image URL */
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #f0f0f0; /* Light font color for better contrast */
+}
+
+nav {
+  background: rgba(51, 51, 51, 0.9);
+  color: white;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  padding: 2rem;
+  margin: 2rem 0;
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for sections */
+  color: #333; /* Darker text color for contrast against light background */
+}
+
+.project-list, .experience-list, .certification-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-item, .experience-item, .certification-item {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin: 1rem;
+  flex: 1 1 30%;
+  background: white; /* Ensuring items have a white background */
+}
+
+form label {
+  display: block;
+  margin-top: 1rem;
+  color: #f0f0f0; /* Lighter label text color */
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  background: rgba(255, 255, 255, 0.1); /* Slightly transparent background for inputs */
+  color: #f0f0f0; /* Lighter input text color */
+  border: 1px solid #f0f0f0; /* Lighter border color */
+}
+
+form input::placeholder, form textarea::placeholder {
+  color: #cccccc; /* Lighter placeholder text color */
+}
+
+form button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: #f0f0f0;
+  border: 1px solid #f0f0f0; /* Lighter button border color */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .project-item, .experience-item, .certification-item {
+    flex: 1 1 100%; /* Full width on mobile devices */
+  }
+}
+
+@media (max-width: 1024px) {
+  .project-item, .experience-item, .certification-item {
+    flex: 1 1 45%; /* Nearly half width on tablets */
+  }
+}
